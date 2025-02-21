@@ -1,0 +1,42 @@
+
+.btn {
+    margin-right: 1px;
+    margin: 5px 1px;  /* 상하 5px, 오른쪽 1px, 왼쪽 기본 5px */
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-image: linear-gradient(to bottom, #52BCDC, #36B0D5);
+}
+.btn-edit:hover,
+.btn-edit:focus,
+.btn-edit:active,
+.btn-edit.active {
+    background-image: linear-gradient(to bottom, #36B0D5, #52BCDC);
+}
+
+.btn-delete {
+    background-image: linear-gradient(to bottom, #D95551, #C53531);
+}
+.btn-delete:hover,
+.btn-delete:focus,
+.btn-delete:active,
+.btn-delete.active {
+    background-image: linear-gradient(to bottom, #C53531, #D95551);
+}
+
+.btn-list {
+    background-image: linear-gradient(to bottom, #3174AF, #285F8E);
+}
+.btn-list:hover,
+.btn-list:focus,
+.btn-list:active,
+.btn-list.active {
+    background-image: linear-gradient(to bottom, #285F8E, #3174AF);
+}
