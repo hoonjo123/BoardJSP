@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+	<mapper namespace="calMapper">
+	
+		<insert id="calInsert">
+			INSERT INTO CALENDAR
+			(
+				  CALNO
+				, CALYEAR
+				, CALMONTH
+				, CALDAY
+				, CALTIME
+				, CALREQ
+				, CALCONTENTS
+			)
+			VALUES
+			(
+				  CALNO_SEQ.NEXTVAL
+				, #{calYear}
+				, #{calMonth}
+				, #{calDay}
+				, #{calTime}
+				, #{calReq}
+				, #{calContents}
+			)
+		</insert>
+
+  		<select id="calSelect" resultType="calVo">
+			SELECT
+					  CALNO
+					, CALYEAR
+					, CALMONTH
+					, CALDAY
+					, CALTIME
+					, CALREQ
+					, CALCONTENTS
+			  FROM CALENDAR
+			 WHERE CALYEAR = #{year}
+			   AND CALMONTH = #{month}
+			 ORDER BY CALDAY ASC
+		</select>
+		
+		<delete id="calDelete">
+			DELETE FROM CALENDAR
+			WHERE CALNO = #{calNo}
+		</delete>
+	</mapper>
