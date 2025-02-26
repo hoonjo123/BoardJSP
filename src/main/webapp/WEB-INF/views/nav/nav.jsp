@@ -18,8 +18,8 @@
     <li role="presentation" class="calculation">
         <a href="${pageContext.request.contextPath}/board/calculation">계산기</a>
     </li>
-    <li role="presentation" class="calender">
-        <a href="${pageContext.request.contextPath}/board/calender">캘린더</a>
+    <li role="presentation" class="calendar">
+        <a href="${pageContext.request.contextPath}/calendar">캘린더</a>
     </li>
 </ul>
 
@@ -33,8 +33,8 @@ $(document).ready(function() {
         $(".test").addClass("active"); 
     } else if (path.indexOf("/board/calculation") > -1) {
         $(".calculation").addClass("active");
-    } else if (path.indexOf("/board/calender") > -1) {
-        $(".calender").addClass("active");
+    } else if (path.indexOf("/calendar/calendar") > -1) {
+        $(".calendar").addClass("active");
     } else if (path.indexOf("/board") > -1) {
         $(".board").addClass("active");
     }

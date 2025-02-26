@@ -84,12 +84,6 @@ public class BoardController {
     public String calculatingMachine() {
     	return "/board/calculation";
     }
-    
-    //캘린더
-    @GetMapping("/calender")
-    public String calender() {
-    	return "/board/calender";
-    }
 }
 
 

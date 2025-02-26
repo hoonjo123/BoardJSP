@@ -1,0 +1,33 @@
+.calendar-container {
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.calendar-header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.calendar-nav {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.calendar-nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+table.table-striped tbody tr td:nth-child(1) {
+    background-color: rgba(255, 209, 209, 0.8);
+}
+table.table-striped tbody tr td:nth-child(7) {
+    background-color: rgba(214, 214, 250, 0.8);
+}
+.has-schedule {
+    background-color: #96CB96 !important;
+}
+#existingScheduleTable {
+    margin-bottom: 20px;
+}
